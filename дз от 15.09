@@ -1,0 +1,21 @@
+sudo useradd -m user1
+sudo useradd -m user2
+sudo useradd -m user3
+
+sudo touch /home/user1/file1.txt
+sudo touch /home/user2/file2.txt
+sudo touch /home/user3/file3.txt
+
+sudo chown user1:user1 /home/user1/file1.txt
+sudo chown user2:user2 /home/user2/file2.txt
+sudo chown user3:user3 /home/user3/file3.txt
+
+sudo chmod 600 /home/user1/file1.txt   # только владелец: чтение/запись
+sudo chmod 640 /home/user2/file2.txt   # владелец: чтение/запись; группа: чтение
+sudo chmod 644 /home/user3/file3.txt   # владелец: чтение/запись; группа и остальные: чтение
+
+ls -l /home/user1/
+ls -l /home/user2/
+ls -l /home/user3/
+
+у меня не грузит скрин 
